@@ -84,6 +84,7 @@ ul, ol {
 
 .nav-list {
     display: flex;
+    
 }
 .nav-items:not(:last-child) {
     margin-right: 50px;
@@ -126,6 +127,13 @@ ul, ol {
 .nav-mail:hover, .nav-mail:focus {
     color: var(--main-color);
 }
+.mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    vertical-align: middle;
+}
 
 .nav-tel {
     font-weight: 500;
@@ -133,13 +141,27 @@ ul, ol {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-link-color);
+    display:inline;
 }
 .nav-tel:hover, .nav-tel:focus{
     color: var(--main-color);
 }
+.tel-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+
+
 /*bg-head*/
 .bg-head {
     background-color: #2F303A;
+    background-image: url(../images/bg.jpg);
+    background: linear-gradient (to right, rgba(47, 48, 58, 0.4), rgba(47, 0, 0, 0.4));
+    background-size: cover;
     
 }
 .hero-contant {
