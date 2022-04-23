@@ -396,6 +396,7 @@ ul, ol {
 .clients-logo-link:hover {
     background-color: var(--background-color-white);
     color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 
