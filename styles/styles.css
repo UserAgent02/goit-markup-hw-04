@@ -198,8 +198,10 @@ ul, ol {
     border-radius: 4px;
     color: #FFFFFF;
     background: var(--main-color);
+    cursor: pointer;
    
 }
+
 
 /*properties*/
 .properties {
@@ -212,9 +214,21 @@ ul, ol {
 }
 .properties-item:not(:last-child) {
     margin-right: 30px;
-
-
 }
+
+.properties-item .properties-icon{
+    content: '';
+    display: flex;
+    height: 120px;
+    background: #F5F4FA;
+    justify-content: center;
+
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 0;
+}
+
+
 .properties-title {
     width: 270px;
     margin-bottom: 10px;
@@ -312,13 +326,89 @@ ul, ol {
     /*text-align: center;*/
     letter-spacing: 0.03em;
     color: var(--secondary-link-color);
+    margin-bottom: 16px;
 }
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    color: #AFB1B8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+.team-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+.team-soc-icon {
+    fill: currentColor
+}
+.team-soc-link:hover {
+    background-color: var(--main-color);
+    color: var(--background-color-white);
+}
+
+.clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        background-color: var(--background-color-white)
+}
+.clients-title {
+    margin-bottom: 50px;
+
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,16;
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color);
+}
+.client-block {
+    display: flex;
+}
+
+
+.clients-logo-icon:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    color: #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+.clients-icon { 
+    fill: currentColor
+}
+.clients-logo-link:hover {
+    background-color: var(--background-color-white);
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
 /*footer*/
 .footer {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px; 
-    
 }
 .logo-footer {
     display: block;
