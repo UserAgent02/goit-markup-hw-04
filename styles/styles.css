@@ -159,12 +159,10 @@ ul, ol {
 /*bg-head*/
 .bg-head {
     background-color: #2F303A;
-    background-image: url(../images/bg.jpg);
-    background:  linear-gradient 
-    (to right, 
-    rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4));
-    
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     margin: auto;
@@ -230,6 +228,7 @@ ul, ol {
     content: '';
     display: flex;
     height: 120px;
+    width: 270px;
     background: #F5F4FA;
     justify-content: center;
 
@@ -357,9 +356,14 @@ ul, ol {
     margin-right: 10px;
 }
 .team-soc-icon {
-    fill: currentColor
+    fill: currentColor;
+
 }
 .team-soc-link:hover {
+    background-color: var(--main-color);
+    color: var(--background-color-white);
+}
+.team-soc-link:focus {
     background-color: var(--main-color);
     color: var(--background-color-white);
 }
@@ -399,16 +403,25 @@ ul, ol {
     color: #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px;
+    
+    
 }
 .clients-icon { 
-    fill: currentColor
+    width: 170px;
+    height: 92px;
+    fill: currentColor;
+
 }
 .clients-logo-link:hover {
     background-color: var(--background-color-white);
     color: var(--main-color);
     border-color: var(--main-color);
 }
-
+.clients-logo-link:focus {
+    background-color: var(--background-color-white);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
 
 
 
